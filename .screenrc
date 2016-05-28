@@ -1,0 +1,27 @@
+######################################################################
+# $Id$
+#
+
+######################################################################
+# default screen preferences
+#
+#escape ^A^A
+escape ``
+autodetach on
+defscrollback 10000
+#deflogin off
+hardcopydir "~/.screenlog"
+multiuser off
+startup_message off
+vbell on
+vbell_msg "beep"
+
+# set status lines
+# 2 line display
+#caption     always        "%{+b rk}%H%{gk} |%{yk}%Y-%m-%d %c| %72=Load: %l %{wk}"
+#hardstatus alwayslastline "%?%{wk}%-Lw%?%{wr}%n*%f %t%?(%u)%?%?%{wk}%+Lw%?"
+# 1 line display
+caption     always        "%{+b rk}%H%{gk} | %{yk}%Y-%m-%d %c%{gk} | Load: %l %{gk} | %?%{wk}%-Lw%?%{wr}%n*%f %t%?(%u)%?%?%{wk}%+Lw%?%{gk} |"
+# 1 line display for screen v.3
+#caption     always        "$HOSTNAME | %Y-%m-%d %c | Load: %l | %w |"
+
